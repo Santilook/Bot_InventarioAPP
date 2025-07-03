@@ -2,8 +2,9 @@ import logging
 from telegram.ext import *
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 import responses 
+import os
 
-API_KEY = '7889080801:AAFVoiJA4YxtL3RWTghYKIbjYAH67YwOYHg'
+API_KEY = os.getenv("BOT_TOKEN")
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logging.info('Iniciando el Bot de InventarioApp...')
